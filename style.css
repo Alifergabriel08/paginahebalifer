@@ -1,0 +1,129 @@
+/* Importação de Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Estilos Globais */
+:root {
+    --cor-primaria: #2c3e50; /* Azul escuro/cinza - Fundo */
+    --cor-secundaria: #ecf0f1; /* Cinza claro - Texto */
+    --cor-destaque: #e74c3c; /* Vermelho - Destaque/Aviso */
+    --cor-fundo-card: #34495e; /* Azul/Cinza mais escuro */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: var(--cor-fundo-card);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--cor-destaque);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+header p {
+    font-weight: 300;
+}
+
+/* Main Content e Seções */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: var(--cor-fundo-card);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+section h2 {
+    color: var(--cor-destaque);
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Cards (para a seção 'o-reator') */
+#o-reator {
+    display: flex;
+    gap: 20px;
+}
+
+#o-reator .card {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid var(--cor-destaque);
+    border-radius: 6px;
+    background-color: #3f5872; /* Um pouco mais claro */
+}
+
+.card h3 {
+    color: var(--cor-secundaria);
+    margin-bottom: 10px;
+    border-left: 3px solid var(--cor-destaque);
+    padding-left: 10px;
+}
+
+/* Lista de Consequências */
+#consequencias ul {
+    list-style-type: '🔥 '; /* Ícone personalizado */
+    margin-left: 25px;
+}
+
+#consequencias li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+#consequencias strong {
+    color: var(--cor-destaque);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 1px solid var(--cor-secundaria);
+    font-size: 0.8em;
+    opacity: 0.7;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    #o-reator {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    body {
+        padding: 10px;
+    }
+}
